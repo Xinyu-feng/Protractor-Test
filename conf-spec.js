@@ -9,7 +9,12 @@ exports.config = {
   specs: ['test.js'],
 
   capabilities: {
-      browserName: 'chrome'
+    browserName: 'chrome',
+    "chromeOptions": {
+        binary: "C:\Users\xinyu\AppData\Local\Google\Chrome\Application",
+        args: [],
+        extensions: [],
+    }
   },
 
   params: {
