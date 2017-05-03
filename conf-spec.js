@@ -11,7 +11,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     "chromeOptions": {
-        binary: "C:\Users\xinyu\AppData\Local\Google\Chrome\Application",
+        binary: "C:\Users\xinyu\AppData\Local\Google\Chrome\Application\chrome.exe",
         args: [],
         extensions: [],
     }
