@@ -46,6 +46,9 @@ exports.config = {
             spec: {
                 displayStacktrace: true
             },
+            colors: {
+                enabled: false,
+            },
             prefixes: {
                 successful: "O ",
                 failed: "X ",
