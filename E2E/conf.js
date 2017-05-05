@@ -1,4 +1,3 @@
-let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     framework: 'jasmine2',
@@ -47,7 +46,5 @@ exports.config = {
             displayStacktrace: true
           }
         }));
-        require('jasmine-reporters');
-        jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter('/Users/xinyu/Desktop/Report/', true, true));
     },
 };
