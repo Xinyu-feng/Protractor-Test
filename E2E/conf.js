@@ -1,4 +1,3 @@
-let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     framework: 'jasmine2',
@@ -41,11 +40,6 @@ exports.config = {
         global.gameShowPage = require('./pages/gameShowPage.js');
 
         global.EC = protractor.ExpectedConditions;
-
-        jasmine.getEnv().addReporter(new SpecReporter({
-          spec: {
-            displayStacktrace: true
-          }
         }));
     },
 };
