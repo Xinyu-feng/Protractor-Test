@@ -47,9 +47,9 @@ exports.config = {
                 displayStacktrace: true
             },
             prefixes: {
-                success: 'OK ',
-                failure: 'X '
-            }
+                successful: "OK ",
+                failed: "X ",
+            },
         }));
     },
 };
