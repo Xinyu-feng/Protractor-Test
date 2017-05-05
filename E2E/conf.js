@@ -40,5 +40,15 @@ exports.config = {
         global.gameShowPage = require('./pages/gameShowPage.js');
 
         global.EC = protractor.ExpectedConditions;
+        
+        jasmine.getEnv().addReporter(new SpecReporter({
+            spec: {
+                displayStacktrace: true
+            },
+            prefixes: {
+                success: 'OK ',
+                failure: 'X '
+            }
+        }));
     },
 };
