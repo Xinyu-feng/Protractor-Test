@@ -40,6 +40,5 @@ exports.config = {
         global.gameShowPage = require('./pages/gameShowPage.js');
 
         global.EC = protractor.ExpectedConditions;
-        }));
     },
 };
