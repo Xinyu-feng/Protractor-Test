@@ -22,7 +22,7 @@ var RegistrationPage = function () {
     this.doneBtn = element(by.buttonText('Done!'));
 
     //Selectors for teacher registration last step
-    this.title = element(by.model('Teacher.Salutation'));
+    this.title = element.all(by.model('Teacher.Salutation')).first();
     this.titlePickerOptions = 'Salutation for Salutation in Salutations';
     this.firstName = element(by.model('Teacher.FirstName'));
     this.lastName = element(by.model('Teacher.LastName'));
