@@ -2,7 +2,7 @@ var ClassManagementPage = function () {
     //Selectors class management page
     this.addClassBtn = $('div[ng-click="AddClass()"]');
     this.gameShowBtn = $('button[ng-click="SelectClassType(\'G\')"]');
-    this.homeWorkPremiumBtn = $('button[ng-click="SelectClassType(\'H\')"]');
+    this.homeWorkPremiumBtn = $$('button[ng-click="SelectClassType(\'H\')"]').first();
     this.classRedemptionCode = element(by.model('Class.RedemptionCode'));
     this.homeWorkCoursePicker = $('select[ng-show="Class.ClassType == \'H\'"]');
     this.gameShowCoursePicker = $('select[ng-show="Class.ClassType != \'H\'"]');
