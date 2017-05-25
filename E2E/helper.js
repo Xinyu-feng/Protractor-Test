@@ -39,8 +39,7 @@ var switchBrowser = function (currentBrowser) {
     element = currentBrowser.element;
     $ = currentBrowser.$;
     $$ = currentBrowser.$$;
-
-};
+  };
 
 var generateTimeStamp = function (differentFormat) {
     var timestamp = '';
@@ -69,7 +68,6 @@ var generateTimeStamp = function (differentFormat) {
 
     return timestamp;
 };
-
 
 var enableUserTestMode = function (userId) {
     //console.log('userid === ' + userId);

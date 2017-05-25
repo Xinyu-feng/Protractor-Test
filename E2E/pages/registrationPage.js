@@ -19,7 +19,7 @@ var RegistrationPage = function (browserInstance) {
 
     this.allAvatars = element.all(by.repeater('Avatar in Avatars'));
     this.continueStudentRegBtn = $('button[ng-click="step3Submitted = true"]');
-
+<<<<<<< HEAD
     //Selectors for teacher registration last step
     this.title = element.all(by.model('Teacher.Salutation')).first();
     this.titlePickerOptions = 'Salutation for Salutation in Salutations';

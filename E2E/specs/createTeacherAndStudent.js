@@ -130,7 +130,6 @@ describe("Check login", function () {
         expect(classManagementPage.addClassBtn.isDisplayed()).toBe(true);
         expect(browser.getCurrentUrl()).toBe(browser.params.siteURL + 'App/#/Teacher');
 
-
         expect(classManagementPage.allClasses.count()).toBe(0);
 
         //Click “Add Class”
@@ -180,7 +179,6 @@ describe("Check login", function () {
         browser.navigate().back();
         browser.waitForAngular();
         expect(classManagementPage.allClasses.count()).toBe(1);
-
 
         //Screen capture  (20151231_0830_TeacherCreateClassHomework_01.jpg)
         helper.makeScreenshot(screenShotSubDir, timestamp, 'TeacherCreateClassHomework_01.jpg', browser);
@@ -412,7 +410,7 @@ describe("Check login", function () {
         });
     });
 
-    xit('Test Case #4: Create a GameShow Class and Play a GameShow', function () {
+    it('Test Case #4: Create a GameShow Class and Play a GameShow', function () {
         //Login as a teacher
         loginPage.login('TestScript+Teacher20160608_0957@knowledgehook.com', 'abcd');
 
